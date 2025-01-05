@@ -1,13 +1,14 @@
-# Introducción a Grav CMS
+# Introducció a Grav CMS
 
-Grav CMS es un sistema de gestión de contenido (CMS) moderno y de código abierto que se enfoca en la simplicidad y la velocidad. A diferencia de otros CMS tradicionales, Grav no utiliza una base de datos para almacenar contenido, sino que emplea archivos Markdown, lo que lo hace extremadamente ligero y fácil de usar.
+Grav CMS és un sistema de gestió de continguts (CMS) modern i de codi obert que se centra en la simplicitat i la velocitat. A diferència d'altres CMS tradicionals, Grav no utilitza una base de dades per emmagatzemar contingut, sinó que empra fitxers Markdown, cosa que el fa extremadament lleuger i fàcil d'utilitzar.
 
-## Características principales
+## Característiques principals
 
-- **Rendimiento rápido**: Gracias a su arquitectura basada en archivos, Grav es extremadamente rápido y eficiente.
-- **Flexibilidad**: Grav permite una gran personalización a través de su sistema de plantillas y plugins.
-- **Markdown**: Utiliza Markdown para la creación de contenido, lo que facilita la edición y el mantenimiento.
-- **Extensible**: Cuenta con una amplia gama de plugins y temas que se pueden instalar para ampliar sus funcionalidades.
-- **SEO amigable**: Incluye características integradas para mejorar el SEO de tu sitio web.
+- **Rendiment ràpid**: Gràcies a la seva arquitectura basada en fitxers, Grav és extremadament ràpid i eficient.
+- **Flexibilitat**: Grav permet una gran personalització a través del seu sistema de plantilles i plugins.
+- **Markdown**: Utilitza Markdown per a la creació de contingut, cosa que facilita l'edició i el manteniment.
+- **Extensible**: Compta amb una àmplia gamma de plugins i temes que es poden instal·lar per ampliar les seves funcionalitats.
+- **SEO amigable**: Inclou característiques integrades per millorar el SEO del teu lloc web.
 
-Grav CMS es ideal para desarrolladores y usuarios que buscan una solución de CMS ligera y potente sin la complejidad de los sistemas tradicionales basados en bases de datos.
+Grav CMS és ideal per a desenvolupadors i usuaris que busquen una solució de CMS lleugera i potent sense la complexitat dels sistemes tradicionals basats en bases de dades.
+
