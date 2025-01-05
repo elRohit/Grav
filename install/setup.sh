@@ -33,24 +33,39 @@ echo "GravCMS descomprimit correctament."
 # Crear un certificat letsencrypt
 sudo apt-get install -y certbot  > /dev/null
 echo "Certbot instal·lat correctament."
+sudo systemctl stop apache2 > /dev/null
 read -p "Introdueix el teu domini (extern): " domini
 sudo certbot certonly -d $domini > /dev/null
+sudo systemctl start apache2 > /dev/null
 echo "Certificat Let's Encrypt creat correctament."
 
 #Variables VirtuaHost
 
 # Crear un nou virtualhost per al GravCMS amb https i el certificat certbot
-sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/grav.conf
-echo "Arxiu de configuració copiat correctament."
-sudo sed -i 's|<VirtualHost *:80>|<VirtualHost *:443>|' /etc/apache2/sites-available/grav.conf
-sudo sed -i 's|DocumentRoot /var/www/html|DocumentRoot /var/www/html/grav|' /etc/apache2/sites-available/grav.conf
-sudo sed -i 's|ServerName localhost|ServerName '$domini'|' /etc/apache2/sites-available/grav.conf
-sudo sed -i 's|ServerAdmin webmaster@localhost|ServerAdmin webmaster@'$domini'|' /etc/apache2/sites-available/grav.conf
-sudo sed -i 's|#ServerAlias www.example.com|ServerAlias www.'$domini'|' /etc/apache2/sites-available/grav.conf
-sudo sed -i 's|#SSLCertificateFile|SSLCertificateFile /etc/letsencrypt/live/'$domini'/fullchain.pem|' /etc/apache2/sites-available/grav.conf
-sudo sed -i 's|#SSLCertificateKeyFile|SSLCertificateKeyFile /etc/letsencrypt/live/'$domini'/privkey.pem|' /etc/apache2/sites-available/grav.conf
-sudo sed -i 's|#Include conf-available/serve-cgi-bin.conf|Include conf-available/serve-cgi-bin.conf\nSSLEngine on|' /etc/apache2/sites-available/grav.conf
-echo "Arxiu de configuració modificat correctament."
+echo "<VirtualHost *:80>
+    ServerName $domini
+    Redirect permanent / https://$domini/
+</VirtualHost>" > /etc/apache2/sites-available/grav.conf
+echo "VirtualHost http creat correctament."
+
+echo "<VirtualHost *:443>
+    ServerName $domini
+    DocumentRoot /var/www/html/grav
+    SSLEngine on
+    SSLCertificateFile /etc/letsencrypt/live/$domini/fullchain.pem
+    SSLCertificateKeyFile /etc/letsencrypt/live/$domini/privkey.pem
+</VirtualHost>" > /etc/apache2/sites-available/grav-ssl.conf
+echo "VirtualHost https creat correctament."
+
+# Habilitar els nous virtualhosts
+sudo a2ensite grav.conf > /dev/null
+sudo a2ensite grav-ssl.conf > /dev/null
+echo "VirtualHosts habilitats correctament."
+
+# Habilitar els mòduls necessaris per al funcionament del GravCMS
+sudo a2enmod rewrite > /dev/null
+sudo a2enmod ssl > /dev/null
+echo "Mòduls habilitats correctament."
 # Reiniciar el servei d'apache
 sudo systemctl restart apache2 > /dev/null
 echo "Apache reiniciat correctament."
