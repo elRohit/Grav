@@ -9,6 +9,13 @@ Abans d'instal·lar Grav CMS, assegureu-vos que el vostre servidor compleixi els
 - **Emmagatzematge**: Almenys 100 MB d'espai lliure en disc
 - **Servidor Web**: Apache, Nginx o IIS
 
+## Instal·lació automàtica a travès s'un script
+
+1. Clona el repositori actual
+``` git clone https://github.com/elRohit/Grav.git ```
+
+
+
 ## Passos d'Instal·lació
 
 1. **Descarregar Grav**:
