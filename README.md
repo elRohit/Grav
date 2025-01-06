@@ -35,15 +35,19 @@ Grav CMS és un sistema de gestió de continguts (CMS) modern i de codi obert qu
 
 - Per crear pàgines a la pàgina per defcete de Grav tenia un guia de com fer-ho, igualment ho explicarem aqui pas a pas, primerament haurem d'obrir la consola de Ubuntu (SSH) i atravessar les carpetes `/grav-admin/user/pages` amb la comanda `cd /var/www/grav-admin/user/pages`.
 
-- Per crear una nova pàgina es tan fàcil com crear un directori amb el numero i nom de la pàgina que voleu donar. EN el meu cas creare un amb nom de _USOLUTIONS_ .
+- Per crear una nova pàgina és tan fàcil com crear un directori amb el número i nom de la pàgina que voleu donar. En el meu cas crearé un amb nom de _USOLUTIONS_.
 
+    ```bash
     sudo mkdir 03.usolutions
     sudo nano 03.usolutions/default.md
-        ---
-        title: Welcome to Usolutions
-        ---
+    ```
+    ```markdown
+    ---
+    title: Welcome to Usolutions
+    ---
 
-        Benvingut a USolutions, el futur de la terra, el control de la tecnologia i la ciencia avançada.
+    Benvingut a USolutions, el futur de la terra, el control de la tecnologia i la ciència avançada.
+    ```
 
     > Ctrl + S (Per guardar) i Ctrl + X (Per sortir)
 
