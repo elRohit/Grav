@@ -1,9 +1,12 @@
+
 ## Índex de Continguts
 
 - [Introducció a Grav CMS](#introducció-a-grav-cms)
 - [Característiques principals](#característiques-principals)
 - [Instal·lació de Grav CMS](instal·lació.md)
 - [Configuració de Grav CMS](cms-config.md)
+
+<link rel="stylesheet" href="styles/style.css">
 
 # Introducció a Grav CMS
 
