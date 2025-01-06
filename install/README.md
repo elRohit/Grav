@@ -43,6 +43,7 @@ Abans d'instal·lar Grav CMS, assegureu-vos que el vostre servidor compleixi els
 
 6. **Configurar Servidor Web**
     - Creem un arxiu de configuració de Grav per a que quan accedim amb el domini ens obri el Grav, creem l'arxiu amb la comanda: ``` sudo nano /etc/apache2/sites-available/grav.conf ``` ha de contindre lo següent(on heu de substituir <el-teu-domini> pel vostre domini):
+    
     ```
     <VirtualHost *:443>
     ServerName <el-teu-domini>
