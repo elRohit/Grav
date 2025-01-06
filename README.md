@@ -60,3 +60,4 @@ Grav CMS és un sistema de gestió de continguts (CMS) modern i de codi obert qu
 - Obrim el panell d'administració de Grav accedir al navegador amb https://<el-teu-domini>/admin. Ens demnarà credencials per logejar que són les que vam crear l aprimera vegada després de instal·lar Grav-admin.
 
 - Ens dirigim cap a la secció **Pages** i allà es on podem administrar les pàgines de GravCMS.
+
