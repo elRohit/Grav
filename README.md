@@ -8,7 +8,7 @@
 
 <link rel="stylesheet" href="styles/style.css">
 
-# Introducció a Grav CMS
+# Introducció a Grav CMSh
 
 ![Grav Logo](https://getgrav.org/user/pages/media/grav-logo.svg)
 
