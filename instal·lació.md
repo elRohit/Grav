@@ -35,11 +35,11 @@ Abans d'instal·lar Grav CMS, assegureu-vos que el vostre servidor compleixi els
     - Utilitzarem Cloudns per crear un domini gratuït, ens hem de crear un compte i crear una zona nova --> Zona gratuïta. El nom de domini pot ser qualsevol que vulgueu i *Activau Dynamic DNS* i on demana la IP heu de posar la ip pública copiada d'abans. Una vegada fet s'actualitzarà automàticament i per comprovar només s'ha de fer un `nslookup` per veure que dona la ip pública que correspon.
     - Ens faltarà crear un Nat Forwarding per redireccionar la solicitud de la Vm a la ip publica. Entrem al panell d'administració del router --> Opcions Avançades --> NAT --> Afegim 2 regles que seràn des de la nostra VM al port 80 i 443.
 
-    ![alt text](../images/image2.png)
+    ![alt text](/images/image2.png)
 
     - FInalment sol·licitem el certificat des de certbot amb la comanda ``` sudo certbot certonly -d <el-teu-domini> ```
 
-    ![alt text](../images/image3.png)
+    ![alt text](/images/image3.png)
 
 6. **Configurar Servidor Web**
     - Creem un arxiu de configuració de Grav per a que quan accedim amb el domini ens obri el Grav, creem l'arxiu amb la comanda: ``` sudo nano /etc/apache2/sites-available/grav.conf ``` ha de contindre lo següent(on heu de substituir <el-teu-domini> pel vostre domini):

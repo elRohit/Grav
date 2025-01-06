@@ -1,3 +1,13 @@
+## Índex de Continguts
+
+- [Introducció a Grav CMS](#introducció-a-grav-cms)
+- [Característiques principals](#característiques-principals)
+- [Instal·lació de Grav CMS](instal·lació.md)
+- [Configuració de Grav CMS](cms-config.md)
+
+
+
+
 # Introducció a Grav CMS
 
 Grav CMS és un sistema de gestió de continguts (CMS) modern i de codi obert que se centra en la simplicitat i la velocitat. A diferència d'altres CMS tradicionals, Grav no utilitza una base de dades per emmagatzemar contingut, sinó que empra fitxers Markdown, cosa que el fa extremadament lleuger i fàcil d'utilitzar.
