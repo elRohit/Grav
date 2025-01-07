@@ -25,9 +25,43 @@ Grav CMS és un sistema de gestió de continguts (CMS) modern i de codi obert qu
 
 > Grav CMS és ideal per a desenvolupadors i usuaris que busquen una solució de CMS lleugera i potent sense la complexitat dels sistemes tradicionals basats en bases de dades.
 
-## Tipografia
+### Requisits mínims de hardware
 
-- Com ja sabeu, quan estem creant pàgines normalment s'utilitzen llenguatges de marcat com HTML i CSS per definir l'estructura i l'estil del contingut. Grav CMS permet utilitzar aquests llenguatges juntament amb Markdown per oferir una experiència de creació de contingut més rica i flexible. Per aprendre les funcionalitats i com funciona ens dirigirem cap a `https://<el-teu-domini>/typography` i aqui us explica com reacciona cada element del markdown visualment.
+Abans d'instal·lar Grav CMS, assegureu-vos que el vostre servidor compleixi els següents requisits mínims de hardware:
+
+- **CPU**: Processador de 1 GHz o superior.
+- **Memòria RAM**: Almenys 512 MB de RAM.
+- **Espai d'emmagatzematge**: Almenys 100 MB d'espai lliure en disc per a la instal·lació bàsica de Grav CMS. Es recomana tenir més espai disponible per a contingut addicional i còpies de seguretat.
+- **Connexió a Internet**: Necessària per descarregar Grav CMS i els seus plugins, així com per a l'accés remot i actualitzacions.
+
+Un cop tingueu tots aquests requisits, podeu procedir amb la instal·lació de Grav CMS seguint les instruccions proporcionades a la secció [Instal·lació de Grav CMS](instal·lació.md).
+
+### Requisits del sistema operatiu
+
+A més dels requisits de hardware, assegureu-vos que el vostre servidor tingui un sistema operatiu compatible amb Grav CMS. Els sistemes operatius recomanats són:
+
+- **Linux**: Qualsevol distribució moderna com Ubuntu, CentOS, Debian, etc.
+- **Windows**: Windows 7 o superior.
+- **macOS**: macOS 10.10 o superior.
+
+És important tenir un servidor web com Apache, Nginx o IIS instal·lat i configurat correctament, així com PHP 7.1.3 o superior amb les extensions necessàries.
+
+### Requisits de Programari
+
+A més dels requisits de hardware i sistema operatiu, necessitareu el següent programari per executar Grav CMS:
+
+- **PHP**: Versió 7.1.3 o superior amb les extensions següents:
+    - `curl`
+    - `dom`
+    - `gd` 
+    - `mbstring`
+    - `xml`
+    - `zip`
+    - `php`
+- **Unzip**: Opcional, però recomanat per a la descompressió de fitxers.
+
+Assegureu-vos que el vostre entorn de desenvolupament o servidor de producció tingui aquests requisits de programari instal·lats i configurats correctament per garantir el funcionament òptim de Grav CMS.
+
 
 # Creació de Pàgines
 
@@ -57,7 +91,11 @@ Grav CMS és un sistema de gestió de continguts (CMS) modern i de codi obert qu
 
 ## Versió Grav-Admin
 
-- Obrim el panell d'administració de Grav accedir al navegador amb https://<el-teu-domini>/admin. Ens demnarà credencials per logejar que són les que vam crear l aprimera vegada després de instal·lar Grav-admin.
+- Obrim el panell d'administració de Grav accedir al navegador amb `https://<el-teu-domini>/admin`. Ens demnarà credencials per logejar que són les que vam crear la primera vegada després de instal·lar Grav-admin.
 
 - Ens dirigim cap a la secció **Pages** i allà es on podem administrar les pàgines de GravCMS.
 
+
+## Tipografia
+
+- Com ja sabeu, quan estem creant pàgines normalment s'utilitzen llenguatges de marcat com HTML i CSS per definir l'estructura i l'estil del contingut. Grav CMS permet utilitzar aquests llenguatges juntament amb Markdown per oferir una experiència de creació de contingut més rica i flexible. Per aprendre les funcionalitats i com funciona ens dirigirem cap a `https://<el-teu-domini>/typography` i aqui us explica com reacciona cada element del markdown visualment.
