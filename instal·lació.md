@@ -1,5 +1,9 @@
 # Guia d'Instal·lació de Grav CMS
 
+
+
+
+
 ## Requisits de Maquinari
 
 Abans d'instal·lar Grav CMS, assegureu-vos que el vostre servidor compleixi els següents requisits de maquinari:
@@ -103,3 +107,32 @@ Abans d'instal·lar Grav CMS, assegureu-vos que el vostre servidor compleixi els
 
 Per a instruccions més detallades, consulteu la [documentació oficial de Grav](https://learn.getgrav.org/16/basics/installation).
 
+# Seguretat
+
+## HTTP(Not Secure)
+
+    - Quan instal·les un servidor web per primera vegada, aquest és inherentment insegur perquè les dades que s'envien i reben no estan xifrades. Això significa que qualsevol persona que intercepti aquestes dades podrà llegir-les fàcilment. Per assegurar el servidor, és important configurar protocols de seguretat com HTTPS, que xifren les dades durant la transmissió.
+
+## HTTPS(Secure)
+
+    - Els certificats autosignats són generats pel mateix servidor, mentre que els certificats CA són emesos per una autoritat de certificació reconeguda. Els certificats CA són més segurs i fiables per a la majoria de les aplicacions.
+    - Els certificats autosignats es poden generar amb eines com OpenSSL. Els certificats CA són emesos per autoritats de certificació com Let's Encrypt, DigiCert, i Comodo.
+
+En el nostre cas hem utilitzat CertBot per obtenir un certificat SSL gratuït de Let's Encrypt. Això ens permet assegurar les comunicacions entre el servidor web i els usuaris, garantint que les dades es transmetin de manera segura i xifrada.
+
+La raó per la que hem escollit CertBot és per que a part de que ens ofereix certificats gratuïts també té un servei que s'encarrega de renovar els certificats de forma automàtica i ho guarda dins dels seus logs
+
+## Còpies de Seguretat
+
+...
+
+# Recomanacions
+
+- **Actualitzacions Regulars**: Mantingueu el vostre Grav CMS i tots els plugins actualitzats per garantir que teniu les últimes funcions i correccions de seguretat.
+- **Plugins Necessaris**: Instal·leu només els plugins que realment necessiteu. Això ajudarà a mantenir el vostre lloc web ràpid i segur.
+- **Còpies de Seguretat**: Realitzeu còpies de seguretat regulars del vostre lloc web per evitar la pèrdua de dades en cas de problemes tècnics o atacs.
+- **Optimització del Rendiment**: Utilitzeu tècniques d'optimització com la memòria cau i la compressió d'imatges per millorar el rendiment del vostre lloc web.
+- **Seguretat**: Configureu correctament els permisos de fitxers i carpetes, i utilitzeu certificats SSL per assegurar les comunicacions.
+- **Documentació**: Consulteu la [documentació oficial de Grav](https://learn.getgrav.org) per obtenir informació detallada sobre la configuració i l'ús de Grav CMS.
+
+Seguint aquestes recomanacions, podreu assegurar-vos que el vostre lloc web amb Grav CMS funcioni de manera eficient i segura.

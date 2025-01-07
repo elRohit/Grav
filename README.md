@@ -144,3 +144,4 @@ Grav és un sistema de gestió de continguts (CMS) que permet utilitzar diferent
    - Estàndards de codificació: Els temes poden no seguir els estàndards de codificació recomanats per Grav, el que pot causar problemes de compatibilitat.
 
 Si trobes algun altre problema tècnic, si us plau, informa-ho a través del sistema de seguiment d'errors del projecte.
+
