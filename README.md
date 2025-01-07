@@ -5,6 +5,8 @@
 - [Característiques principals](#característiques-principals)
 - [Instal·lació de Grav CMS](instal·lació.md)
 - [Configuració de Grav CMS](cms-config.md)
+- [Versions de Grav](#versions-de-grav)
+- [Creació de Pàgines](#creació-de-pàgines)
 - [Tipografia](#tipografia)
 
 
@@ -63,6 +65,16 @@ A més dels requisits de hardware i sistema operatiu, necessitareu el següent p
 Assegureu-vos que el vostre entorn de desenvolupament o servidor de producció tingui aquests requisits de programari instal·lats i configurats correctament per garantir el funcionament òptim de Grav CMS.
 
 
+# Versions de Grav
+
+Grav és un sistema de gestió de continguts (CMS) basat en fitxers plans. Hi ha dues versions principals de Grav:
+
+## Grav Core
+Aquesta és la versió bàsica de Grav, que inclou el nucli del sistema i les funcionalitats essencials per crear i gestionar un lloc web.
+
+## Grav Admin
+Aquesta versió inclou tot el que ofereix Grav Core, però afegeix un panell d'administració gràfic que facilita la gestió del contingut, la configuració del lloc i la instal·lació de plugins i temes.
+
 # Creació de Pàgines
 
 ## Versió Grav
@@ -96,6 +108,39 @@ Assegureu-vos que el vostre entorn de desenvolupament o servidor de producció t
 - Ens dirigim cap a la secció **Pages** i allà es on podem administrar les pàgines de GravCMS.
 
 
+
 ## Tipografia
 
 - Com ja sabeu, quan estem creant pàgines normalment s'utilitzen llenguatges de marcat com HTML i CSS per definir l'estructura i l'estil del contingut. Grav CMS permet utilitzar aquests llenguatges juntament amb Markdown per oferir una experiència de creació de contingut més rica i flexible. Per aprendre les funcionalitats i com funciona ens dirigirem cap a `https://<el-teu-domini>/typography` i aqui us explica com reacciona cada element del markdown visualment.
+
+
+# Problemes
+
+# Problemes Tècnics
+
+Aquest projecte té alguns problemes tècnics coneguts que s'han de tenir en compte:
+
+1. **Compatibilitat amb versions antigues de PHP**:
+   - Grav requereix PHP 7.1 o superior. Les versions més antigues poden causar errors inesperats.
+
+2. **Problemes de rendiment amb grans quantitats de contingut**:
+   - Quan es gestionen grans quantitats de pàgines o contingut, el rendiment pot disminuir significativament.
+
+3. **Extensions de tercers**:
+   - Algunes extensions de tercers poden no ser compatibles amb les últimes versions de Grav, causant problemes de compatibilitat.
+
+4. **Configuració del servidor**:
+   - Grav necessita configuracions específiques del servidor per funcionar correctament, com ara la configuració de permalinks i la gestió de memòria.
+
+5. **Actualitzacions**:
+   - Les actualitzacions del nucli de Grav poden, en alguns casos, trencar la compatibilitat amb temes o plugins existents.
+
+6. **No tots els temes de Grav funcionen**
+
+Grav és un sistema de gestió de continguts (CMS) que permet utilitzar diferents temes per canviar l'aparença del lloc web. No obstant això, no tots els temes disponibles són compatibles amb totes les versions de Grav. Això pot ser degut a diverses raons:
+
+   - Actualitzacions del nucli de Grav: Quan es llança una nova versió de Grav, pot introduir canvis que no són compatibles amb temes més antics.
+   - Dependències de plugins: Alguns temes depenen de plugins específics que també han de ser compatibles amb la versió de Grav que s'està utilitzant.
+   - Estàndards de codificació: Els temes poden no seguir els estàndards de codificació recomanats per Grav, el que pot causar problemes de compatibilitat.
+
+Si trobes algun altre problema tècnic, si us plau, informa-ho a través del sistema de seguiment d'errors del projecte.
