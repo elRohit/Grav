@@ -4,7 +4,7 @@ Grav CMS es pot instal·lar de diverses maneres segons les vostres necessitats i
 
 ### Taula de Continguts
 
-- [Instal·lació Manual](#instal·lació-manual)
+- [Instal·lació Manual](#installació-manual)
 - [Utilitzant Docker](#utilitzant-docker)
 - [Utilitzant Softaculous](#utilitzant-softaculous)
 - [Utilitzant Composer](#utilitzant-composer)
