@@ -8,7 +8,7 @@ Grav CMS es pot instal·lar de diverses maneres segons les vostres necessitats i
 - [Utilitzant Docker](#utilitzant-docker)
 - [Utilitzant Softaculous](#utilitzant-softaculous)
 - [Utilitzant Composer](#utilitzant-composer)
-- Tornar a l'[Inici](../README.md)
+- [Tornar a l'Inici](../README.md)
 
 ### Instal·lació Manual
 
