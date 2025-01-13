@@ -14,6 +14,8 @@ Grav CMS es pot instal·lar de diverses maneres segons les vostres necessitats i
 
 Aquest és el mètode tradicional d'instal·lació de Grav, que implica descarregar els arxius del lloc web oficial i configurar-los manualment al vostre servidor web. Els passos detallats per a aquesta instal·lació es troben a la secció anterior d'aquesta guia.
 
+> Aqui us deixo com he instal·lat Grav CMS en una Màquina Ubuntu 24.04 LTS pas a pas de forma Manual [aqui](/install/localinstall.md)
+
 ### Utilitzant Docker
 
 Docker és una eina que permet crear, desplegar i executar aplicacions en contenidors. Grav CMS té una imatge oficial de Docker que facilita la seva instal·lació i desplegament. A continuació es mostren els passos bàsics per instal·lar Grav utilitzant Docker:
@@ -59,14 +61,6 @@ Aquestes són algunes de les maneres més comunes d'instal·lar Grav CMS. Trieu 
 # Guia d'Instal·lació de Grav CMS
 
 > Aqui us deixo com he instal·lat Grav CMS en un Ubuntu Server 24.04 LTS pas a pas [aqui](/install/localinstall.md)
-
-# Seguretat
-
-## HTTP(Not Secure)
-
-En el nostre cas hem utilitzat CertBot per obtenir un certificat SSL gratuït de Let's Encrypt. Això ens permet assegurar les comunicacions entre el servidor web i els usuaris, garantint que les dades es transmetin de manera segura i xifrada.
-
-La raó per la que hem escollit CertBot és per que a part de que ens ofereix certificats gratuïts també té un servei que s'encarrega de renovar els certificats de forma automàtica i ho guarda dins dels seus logs
 
 
 
