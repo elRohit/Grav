@@ -45,8 +45,9 @@ CMD ["apache2-foreground"]
 Executeu la següent comanda al directori on es troba el vostre `Dockerfile` per construir la imatge Docker:
 
 ```sh
-docker build -t grav-admin .
+docker build -t grav:latest .
 ```
+
 ![Docker build](../images/docker/3.png)
 
 ## Pas 3: Executar el contenidor Docker
@@ -56,12 +57,21 @@ Un cop la imatge estigui construïda, podeu executar un contenidor amb la següe
 ```sh
 docker run -d -p 80:80 grav:latest
 ```
+
 ![alt text](../images/docker/4.png)
 
-Això exposarà Grav Admin al port 80 del vostre host. Podeu accedir-hi navegant a `http://localhost:8080` al vostre navegador.
+Això exposarà Grav Admin al port 80 del vostre host. Podeu accedir-hi navegant a `http://localhost:80` al vostre navegador.
+
+![alt text](../images/docker/6.png)
+
+Després de configurar el usuari administardor quedarà així:
+
+![alt text](../images/docker/7.png)
 
 ## Conclusió
 
 Ara teniu Grav Admin executant-se en un contenidor Docker. Podeu personalitzar el `Dockerfile` segons les vostres necessitats específiques.
 
 Per verificar que funcionar correctament podem veure amb la comanda `sudo docker ps`
+
+![alt text](../images/docker/5.png)
