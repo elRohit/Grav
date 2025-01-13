@@ -1,9 +1,14 @@
-Tornar a l'inici
-[Inici](../README.md)
-
 ## Tipus d'Instal·lacions de Grav
 
 Grav CMS es pot instal·lar de diverses maneres segons les vostres necessitats i preferències. A continuació es descriuen alguns dels mètodes més comuns:
+
+### Taula de Continguts
+
+- [Instal·lació Manual](#instal·lació-manual)
+- [Utilitzant Docker](#utilitzant-docker)
+- [Utilitzant Softaculous](#utilitzant-softaculous)
+- [Utilitzant Composer](#utilitzant-composer)
+Tornar a l'[Inici](../README.md)
 
 ### Instal·lació Manual
 
@@ -58,13 +63,6 @@ Aquestes són algunes de les maneres més comunes d'instal·lar Grav CMS. Trieu 
 # Seguretat
 
 ## HTTP(Not Secure)
-
-    - Quan instal·les un servidor web per primera vegada, aquest és inherentment insegur perquè les dades que s'envien i reben no estan xifrades. Això significa que qualsevol persona que intercepti aquestes dades podrà llegir-les fàcilment. Per assegurar el servidor, és important configurar protocols de seguretat com HTTPS, que xifren les dades durant la transmissió.
-
-## HTTPS(Secure)
-
-    - Els certificats autosignats són generats pel mateix servidor, mentre que els certificats CA són emesos per una autoritat de certificació reconeguda. Els certificats CA són més segurs i fiables per a la majoria de les aplicacions.
-    - Els certificats autosignats es poden generar amb eines com OpenSSL. Els certificats CA són emesos per autoritats de certificació com Let's Encrypt, DigiCert, i Comodo.
 
 En el nostre cas hem utilitzat CertBot per obtenir un certificat SSL gratuït de Let's Encrypt. Això ens permet assegurar les comunicacions entre el servidor web i els usuaris, garantint que les dades es transmetin de manera segura i xifrada.
 

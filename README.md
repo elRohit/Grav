@@ -4,9 +4,7 @@
 - [Característiques principals](#característiques-principals)
 - [Instal·lació de Grav CMS](/install/install.md)
 - [Configuració de Grav CMS](cms-config.md)
-- [Versions de Grav](#versions-de-grav)
-- [Creació de Pàgines](#creació-de-pàgines)
-- [Tipografia](#tipografia)
+
 
 # Introducció a Grav CMS
 
