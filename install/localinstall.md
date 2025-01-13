@@ -17,7 +17,7 @@ Abans d'instal·lar Grav CMS, assegureu-vos que el vostre servidor compleixi els
 1.**Actualitzar el sistema operatiu**:
 
 ```bash
-    sudo apt-get update && sudoapt-getupgrade-y
+    sudo apt-get update && sudo apt-get upgrade -y
 ```
 
 ![update](../images/manual/2.png)
