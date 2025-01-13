@@ -1,5 +1,56 @@
 Tornar a l'inici
 [Inici](../README.md)
+
+## Tipus d'Instal·lacions de Grav
+
+Grav CMS es pot instal·lar de diverses maneres segons les vostres necessitats i preferències. A continuació es descriuen alguns dels mètodes més comuns:
+
+### Instal·lació Manual
+
+Aquest és el mètode tradicional d'instal·lació de Grav, que implica descarregar els arxius del lloc web oficial i configurar-los manualment al vostre servidor web. Els passos detallats per a aquesta instal·lació es troben a la secció anterior d'aquesta guia.
+
+### Utilitzant Docker
+
+Docker és una eina que permet crear, desplegar i executar aplicacions en contenidors. Grav CMS té una imatge oficial de Docker que facilita la seva instal·lació i desplegament. A continuació es mostren els passos bàsics per instal·lar Grav utilitzant Docker:
+
+> Aqui us deixo com he instal·lat Grav CMS en un Docker pas a pas [aqui](/install/dockerinstall.md)
+
+### Utilitzant Softaculous
+
+Softaculous és un instal·lador automàtic que es troba en molts panells de control d'allotjament web com cPanel. Permet instal·lar Grav CMS amb uns pocs clics:
+
+1. **Accedir a Softaculous**:
+    - Inicieu sessió al vostre panell de control d'allotjament web i cerqueu Softaculous.
+
+2. **Buscar Grav**:
+    - Utilitzeu la barra de cerca per trobar Grav CMS.
+
+3. **Instal·lar Grav**:
+    - Feu clic a "Instal·lar" i seguiu les instruccions per completar la instal·lació.
+
+### Utilitzant Composer
+
+Composer és un gestor de dependències per a PHP que també es pot utilitzar per instal·lar Grav CMS:
+
+1. **Instal·lar Composer**:
+    - Seguiu les instruccions oficials per instal·lar Composer des de [aquí](https://getcomposer.org/download/).
+
+2. **Crear un nou projecte de Grav**:
+    - Executeu la següent comanda per crear un nou projecte de Grav:
+    ```bash
+    composer create-project getgrav/grav my-grav-project
+    ```
+
+3. **Accedir a Grav**:
+    - Navegueu a la carpeta del projecte i inicieu el servidor web integrat de PHP:
+    ```bash
+    cd my-grav-project
+    php -S localhost:8000
+    ```
+    - Accediu a Grav CMS obrint un navegador web i navegant a `http://localhost:8000`.
+
+Aquestes són algunes de les maneres més comunes d'instal·lar Grav CMS. Trieu el mètode que millor s'adapti a les vostres necessitats i preferències.
+
 # Guia d'Instal·lació de Grav CMS
 
 
