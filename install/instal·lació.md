@@ -1,7 +1,6 @@
+Tornar a l'inici
+[Inici](../README.md)
 # Guia d'Instal·lació de Grav CMS
-
-
-
 
 
 ## Requisits de Maquinari
