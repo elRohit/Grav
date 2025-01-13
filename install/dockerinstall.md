@@ -58,8 +58,10 @@ docker run -d -p 80:80 grav:latest
 ```
 ![alt text](../images/docker/4.png)
 
-Això exposarà Grav Admin al port 8080 del vostre host. Podeu accedir-hi navegant a `http://localhost:8080` al vostre navegador.
+Això exposarà Grav Admin al port 80 del vostre host. Podeu accedir-hi navegant a `http://localhost:8080` al vostre navegador.
 
 ## Conclusió
 
 Ara teniu Grav Admin executant-se en un contenidor Docker. Podeu personalitzar el `Dockerfile` segons les vostres necessitats específiques.
+
+Per verificar que funcionar correctament podem veure amb la comanda `sudo docker ps`
