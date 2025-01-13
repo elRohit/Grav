@@ -86,7 +86,7 @@ Abans d'instal·lar Grav CMS, assegureu-vos que el vostre servidor compleixi els
 - Finalment sol·licitem el certificat des de certbot amb la comanda:
 
 ```bash
-sudo certbot certonly -d`<el-teu-domini>`
+sudo certbot certonly -d `<el-teu-domini>`
 ```
 
 ![certbot certonly](/images/image3.png)

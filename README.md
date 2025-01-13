@@ -3,7 +3,7 @@
 - [Introducció a Grav CMS](#introducció-a-grav-cms)
 - [Característiques principals](#característiques-principals)
 - [Instal·lació de Grav CMS](/install/install.md)
-- [Configuració de Grav CMS](cms-config.md)
+- [Configuració de Grav CMS](/cms/cms-config.md)
 - [Tipus de Projectes](#tipus-de-projectes)
 - [Avantatges i Inconvenients](#avantatges-i-inconvenients)
 - [Llicència](#llicència)
