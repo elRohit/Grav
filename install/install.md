@@ -62,6 +62,37 @@ Aquestes són algunes de les maneres més comunes d'instal·lar Grav CMS. Trieu 
 
 > Aqui us deixo com he instal·lat Grav CMS en un Ubuntu Server 24.04 LTS pas a pas [aqui](/install/localinstall.md)
 
+## Problemes durant la instal·lació
+## Problemes durant la instal·lació
+
+Durant la instal·lació de Grav CMS, podeu trobar alguns problemes comuns. A continuació es descriuen alguns d'ells i com solucionar-los:
+
+1. **Permisos de fitxers**:
+    - Assegureu-vos que els fitxers i carpetes tinguin els permisos correctes. Podeu utilitzar les següents comandes per ajustar els permisos:
+    ```bash
+    find . -type f -exec chmod 644 {} \;
+    find . -type d -exec chmod 755 {} \;
+    ```
+
+2. **Requisits del servidor**:
+    - Comproveu que el vostre servidor compleixi els requisits mínims de Grav CMS, com ara la versió de PHP i les extensions necessàries. Podeu trobar els requisits a la [documentació oficial](https://learn.getgrav.org/basics/requirements).
+
+3. **Errors de dependències**:
+    - Si utilitzeu Composer, assegureu-vos que totes les dependències s'han instal·lat correctament. Podeu intentar executar:
+    ```bash
+    composer install
+    ```
+
+4. **Configuració del servidor web**:
+    - Assegureu-vos que el vostre servidor web (Apache, Nginx, etc.) estigui configurat correctament per servir Grav CMS. Podeu trobar exemples de configuració a la [documentació oficial](https://learn.getgrav.org/webservers-hosting).
+
+5. **Problemes de memòria cau**:
+    - Si observeu comportaments estranys, proveu de netejar la memòria cau de Grav:
+    ```bash
+    bin/grav clear-cache
+    ```
+
+Si continueu tenint problemes, consulteu els fòrums de la comunitat de Grav o la seva [documentació oficial](https://learn.getgrav.org/troubleshooting/common-problems) per obtenir més ajuda.
 
 
 # Recomanacions
