@@ -1,3 +1,0 @@
-## Còpies de Seguretat
-
-...

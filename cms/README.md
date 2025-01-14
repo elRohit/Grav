@@ -17,3 +17,4 @@
     - [Còpies de Seguretat](#còpies-de-seguretat)
     - [Gestió d'Usuaris](#gestió-dusuaris)
 6. [Optimització del Rendiment](#optimització-del-rendiment)
+7. [Tornar a l'inici](../README.md)
