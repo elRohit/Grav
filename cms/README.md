@@ -98,7 +98,9 @@ Per configurar un domini personalitzat en ClouDNS, segueix aquests passos:
     - Introdueix el nom del teu domini i fes clic a `Add`.
 
 
-5. **Esperar la Propagació DNS**: Els canvis DNS poden trigar fins a 24 hores a propagar-se completament.
+4. **Esperar la Propagació DNS**: Els canvis DNS poden trigar fins a 24 hores a propagar-se completament.
 
 
-Amb aquests passos, hauràs configurat correctament un domini personalitzat per al teu lloc web Grav utilitzant ClouDNS.
+Amb aquests passos, hauràs configurat correctament un domini personalitzat per al teu lloc web Grav utilitzant ClouDNS. 
+
+
